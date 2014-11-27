@@ -49,6 +49,6 @@ while (my $row = $csv->getline($file)) {
 }
 
 for my $server (sort {$bandwidth{$b} <=> $bandwidth{$a} } keys %bandwidth) {
-    printf "%s: %.02f\n", $server, $bandwidth{$server}
+    printf "%s: %.02f GB\n", $server, $bandwidth{$server}
 }
 
